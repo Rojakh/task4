@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
 
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -9,6 +10,8 @@ import { Product } from '../product';
 export class ProductsComponent implements OnInit {
  
   constructor() { }
+
+  
  products:Product[]= [
     {
       "domain":"app.com",
