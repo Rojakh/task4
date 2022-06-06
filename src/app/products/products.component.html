@@ -1,0 +1,41 @@
+<div class="container">    
+  <table class="table table-striped">  
+    <thead>  
+        <tr>  
+          <th>Domain</th>  
+          <th>Price</th>  
+          <th>Clicks</th>  
+          <th>Update</th> 
+          <th>Status</th> 
+        </tr>  
+    </thead>  
+    <tbody id="table1">  
+      <tr *ngFor="let product of products">  
+        <td>{{ product.domain}}</td>  
+        <td>{{ product.price }}</td>  
+        <td>{{ product.clicks }}</td>  
+        <td>{{ product.update }}</td>
+        <td>{{ product.status }}</td>    
+      </tr>  
+    </tbody>  
+  </table>
+  </div>
+
+  <nav aria-label="..." style="padding-left:1100px">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <span class="page-link">Previous</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active">
+        <span class="page-link">
+          2
+          <span class="sr-only"></span>
+        </span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
